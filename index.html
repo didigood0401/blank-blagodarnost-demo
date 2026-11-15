@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бланк благодарности - 2 версии</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=PT+Serif:ital@0;1&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#22345a;--red:#a3262c;--gray:#b5bcc6;--ink:#1d2433}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Manrope,Arial,sans-serif;background:#e6e9ee;color:var(--ink)}
+.top{max-width:1300px;margin:0 auto;padding:28px 20px 6px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+h1{font:700 clamp(24px,3vw,36px) Oswald;letter-spacing:.01em;text-transform:uppercase}
+.top p{color:#4f5868;font-size:15px;max-width:640px}
+.seg{display:inline-flex;background:#fff;border-radius:999px;padding:4px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.seg button{border:0;background:transparent;padding:9px 16px;border-radius:999px;font:700 13px Manrope;color:#4f5868;cursor:pointer}
+.seg button.on{background:var(--navy);color:#fff}
+.row{max-width:1300px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+@media(max-width:900px){.row{grid-template-columns:1fr}}
+.cap{font:700 14px Manrope;letter-spacing:.14em;text-transform:uppercase;color:#4f5868;margin-bottom:10px}
+.a4{aspect-ratio:210/297;width:100%;background:#fff;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(20,30,50,.18);container-type:inline-size}
+.logo{position:absolute;border-radius:50%;display:grid;place-items:center;text-align:center;font:700 1.6cqw Manrope;letter-spacing:.06em;text-transform:uppercase}
+.fill{position:absolute;left:12%;right:12%;opacity:0;transition:opacity .4s;color:#1d2433;text-align:center;font:400 2.3cqw/1.45 'PT Serif'}
+body.filled .fill{opacity:1}
+.fill .nm{font:italic 400 4.6cqw 'PT Serif';color:var(--navy);margin:2cqw 0}
+.sig{position:absolute;left:10%;right:10%;display:flex;justify-content:space-between;align-items:flex-end;font:600 1.7cqw Manrope;color:#59617a}
+.sig .ln{width:30cqw;border-top:.25cqw solid #9aa3b3;padding-top:1cqw}
+.seal{width:15cqw;height:15cqw;border-radius:50%;border:.3cqw dashed #b9c0cb;display:grid;place-items:center;font:700 1.5cqw Manrope;color:#9aa3b3}
+.note{max-width:1300px;margin:0 auto;padding:0 20px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.note{grid-template-columns:1fr}}
+.note div{background:#fff;border-radius:14px;padding:16px;font-size:14px;color:#4f5868}
+.note b{display:block;color:var(--ink);margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="top"><div><h1>Бланк благодарности · 2 версии</h1><p>Демо подхода. Места под логотипы КФС, Премьер-лиги, Кубка, Суперкубка и блока RESPECT / fair play отмечены - в макет встанут ваши исходники.</p></div>
+ <div class="seg" id="sw"><button data-m="empty" class="on">Пустой бланк</button><button data-m="filled">С примером текста</button></div></div>
+<div class="row">
+ <div><div class="cap">Версия 1 · «Стадион»</div>
+  <div class="a4">
+   <svg viewBox="0 0 2100 2970" style="position:absolute;inset:0;width:100%;height:100%">
+    <defs><pattern id="pitch" width="2100" height="2970" patternUnits="userSpaceOnUse"><g fill="none" stroke="#e7eaef" stroke-width="10"><rect x="250" y="900" width="1600" height="1800"/><line x1="250" y1="1800" x2="1850" y2="1800"/><circle cx="1050" cy="1800" r="230"/><rect x="650" y="900" width="800" height="320"/><rect x="650" y="2380" width="800" height="320"/><circle cx="1050" cy="1800" r="14" fill="#e7eaef"/></g></pattern></defs>
+    <rect width="2100" height="2970" fill="url(#pitch)"/>
+    <path d="M0 0H2100V560L0 760Z" fill="#22345a"/>
+    <path d="M0 760L2100 560V610L0 810Z" fill="#a3262c"/>
+    <path d="M0 810L2100 610V626L0 826Z" fill="#b5bcc6"/>
+    
+    <path d="M0 2850L2100 2700V2970H0Z" fill="#22345a"/><path d="M0 2820L2100 2670V2690L0 2840Z" fill="#a3262c"/>
+    <text x="1050" y="1040" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="200" fill="#22345a" letter-spacing="10">БЛАГОДАРНОСТЬ</text>
+    <rect x="850" y="1090" width="400" height="10" fill="#a3262c"/>
+   </svg>
+   <div class="logo" style="left:6%;top:4.5%;width:21%;aspect-ratio:1;background:#fff;color:#22345a;box-shadow:0 0 0 .6cqw #a3262c">логотип<br>КФС</div>
+   <div class="logo" style="left:33%;top:7%;width:11%;aspect-ratio:1;border:.3cqw solid rgba(255,255,255,.5);color:#fff">Премьер-<br>лига</div>
+   <div class="logo" style="left:47%;top:7%;width:11%;aspect-ratio:1;border:.3cqw solid rgba(255,255,255,.5);color:#fff">Кубок</div>
+   <div class="logo" style="left:61%;top:7%;width:11%;aspect-ratio:1;border:.3cqw solid rgba(255,255,255,.5);color:#fff">Супер-<br>кубок</div>
+   <div class="logo" style="right:6%;top:8%;width:16%;aspect-ratio:2.2;border-radius:1cqw;background:rgba(255,255,255,.1);border:.3cqw solid rgba(255,255,255,.5);color:#fff">RESPECT ·<br>fair play</div>
+   <div class="fill" style="top:42%">Крымский футбольный союз выражает благодарность<div class="nm">Иванову Ивану Ивановичу</div>за многолетний вклад в развитие футбола Республики Крым, профессионализм и верность принципам честной игры.</div>
+   <div class="sig" style="bottom:12%"><div><div class="ln">Президент КФС</div></div><div class="seal">М.П.</div><div style="text-align:right"><div class="ln">Дата</div></div></div>
+  </div></div>
+
+ <div><div class="cap">Версия 2 · «Честная игра»</div>
+  <div class="a4">
+   <svg viewBox="0 0 2100 2970" style="position:absolute;inset:0;width:100%;height:100%">
+    <defs><pattern id="hex" width="120" height="104" patternUnits="userSpaceOnUse"><path d="M30 0h60l30 52-30 52H30L0 52z" fill="none" stroke="#eef0f4" stroke-width="5"/></pattern>
+     <radialGradient id="fade" cx=".5" cy=".55" r=".55"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+    <rect width="2100" height="2970" fill="url(#hex)"/><rect width="2100" height="2970" fill="url(#fade)"/>
+    <rect x="0" y="0" width="230" height="2970" fill="#22345a"/><rect x="230" y="0" width="34" height="2970" fill="#a3262c"/><rect x="264" y="0" width="10" height="2970" fill="#b5bcc6"/>
+    <rect x="420" y="160" width="1530" height="2650" fill="none" stroke="#22345a" stroke-width="6"/><rect x="450" y="190" width="1470" height="2590" fill="none" stroke="#b5bcc6" stroke-width="3"/>
+    <text x="1185" y="820" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="170" fill="#22345a" letter-spacing="14">БЛАГОДАРНОСТЬ</text>
+    <g fill="#a3262c"><rect x="900" y="870" width="190" height="8"/><rect x="1280" y="870" width="190" height="8"/><circle cx="1185" cy="874" r="20"/></g>
+   </svg>
+   <div class="logo" style="left:52%;top:7.5%;width:20%;aspect-ratio:1;transform:translateX(-25%);background:#fff;color:#22345a;box-shadow:0 0 0 .5cqw #22345a,0 0 0 1.1cqw #fff,0 0 0 1.4cqw #a3262c">логотип<br>КФС</div>
+   <div class="logo" style="left:2.2%;top:30%;width:7%;aspect-ratio:1;border:.25cqw solid rgba(255,255,255,.55);color:#fff;font-size:1cqw">ПЛ</div>
+   <div class="logo" style="left:2.2%;top:40%;width:7%;aspect-ratio:1;border:.25cqw solid rgba(255,255,255,.55);color:#fff;font-size:1cqw">Кубок</div>
+   <div class="logo" style="left:2.2%;top:50%;width:7%;aspect-ratio:1;border:.25cqw solid rgba(255,255,255,.55);color:#fff;font-size:1cqw">Супер</div>
+   <div class="logo" style="left:2.2%;top:62%;width:7%;aspect-ratio:.5;border-radius:1cqw;border:.25cqw solid rgba(255,255,255,.55);color:#fff;font-size:.9cqw;writing-mode:vertical-rl">RESPECT · fair play</div>
+   <div class="fill" style="top:35%;left:24%;right:10%">Крымский футбольный союз выражает благодарность<div class="nm">Иванову Ивану Ивановичу</div>за многолетний вклад в развитие футбола Республики Крым, профессионализм и верность принципам честной игры.</div>
+   <div class="sig" style="bottom:10%;left:24%;right:10%"><div><div class="ln" style="width:24cqw">Президент КФС</div></div><div class="seal">М.П.</div><div style="text-align:right"><div class="ln" style="width:18cqw">Дата</div></div></div>
+  </div></div>
+</div>
+<div class="note">
+ <div><b>Под печать</b>CMYK, 300 dpi, вылеты 3 мм, редактируемый вектор AI/EPS, PDF и PNG-превью, шрифты в комплекте.</div>
+ <div><b>Место под текст</b>Центр и низ светлые: ФИО, текст, дата, подпись и печать впечатываются на принтере без наложений.</div>
+ <div><b>Фон</b>Вместо грифона - разметка поля (версия 1) или мягкие соты мяча (версия 2). Можно аккуратно вернуть грифона силуэтом.</div>
+</div>
+<script>document.querySelectorAll('#sw button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#sw button').forEach(x=>x.classList.toggle('on',x===b));document.body.classList.toggle('filled',b.dataset.m==='filled')})</script>
+</body>
+</html>
